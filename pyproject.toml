@@ -1,0 +1,16 @@
+[project]
+name = "minesweeper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Augustin Morval",email = "augustin.morval.pro@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"

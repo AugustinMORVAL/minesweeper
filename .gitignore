@@ -51,3 +51,6 @@ out/
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+# Dependences
+minesweeper.egg-info

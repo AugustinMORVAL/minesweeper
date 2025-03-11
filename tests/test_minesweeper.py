@@ -1,5 +1,5 @@
 import pytest
-from src import minesweeper
+import minesweeper
 
 def test_module_exists():
     assert minesweeper
