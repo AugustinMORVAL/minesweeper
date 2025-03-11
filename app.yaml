@@ -1,0 +1,3 @@
+runtime: python310
+service: default
+entrypoint: python app/app.py
