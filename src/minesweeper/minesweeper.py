@@ -57,11 +57,18 @@ class Minesweeper:
 
     def get_board(self) -> list:
         """Return the current state of the board."""
-        return self.board
+        board = [["" for _ in range(self.cols)] for _ in range(self.rows)]
+        for row in range(self.rows):
+            for col in range(self.cols):
+                if (row, col) in self.revealed:
+                    board[row][col] = self.board[row][col]
+                else:
+                    board[row][col] = " "
+        return board
 
     def is_winner(self) -> bool:
         """Check if the game has been won."""
-        pass
+        return len(self.revealed) == self.rows * self.cols - self.num_mines
 
     def restart(self) -> None:
         """Restart the game with the same parameters."""
