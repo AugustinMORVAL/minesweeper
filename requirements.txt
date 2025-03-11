@@ -10,8 +10,6 @@ identify==2.6.9
 iniconfig==2.0.0
 isort==6.0.1
 mccabe==0.7.0
--e git+https://github.com/AugustinMORVAL/minesweeper.git@02b397f6f7cb124b11fe1a17ded3b978075cf54f#egg=meansweeper
--e git+https://github.com/AugustinMORVAL/minesweeper.git@02b397f6f7cb124b11fe1a17ded3b978075cf54f#egg=minesweeper
 mypy-extensions==1.0.0
 nodeenv==1.9.1
 numpy==2.2.3
