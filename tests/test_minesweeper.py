@@ -21,3 +21,7 @@ def test_reveal():
     game.place_mines()
     game.reveal(2, 2)
     assert game.revealed == {(2, 2)}
+
+
+def test_fail():
+    assert False
